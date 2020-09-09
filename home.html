@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget App</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- PROFILE -->
+
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+        </div>
+        <img class="circle" src="me 2.png">
+        <a><span class="white-text name">Johar Khan</span></a>
+        <a><span class="white-text email"><em>Web Dev</em></span></a>
+      </div>
+    </li>
+    <li class="aim-group"><img src="aim 2.png" class="aim" alt="">
+      <p class="aim-text">Hard-working individual with proficiency in HTML, JavaScript and CSS, as well as ability to
+        communicate effectively in a team setting.
+      <p>
+    </li>
+    <li>
+      <a class="project tooltipped" data-tooltip="Slide below images left or right" data-position="top"><img
+          src="project.png" alt="" class="aim"> Projects</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li class="images">
+      <div class="carousel">
+        <a class="carousel-item" href="https://tours-project.herokuapp.com/" target="_blank"><img
+            src="https://michaeljamie.github.io/advanced-css-sass-less-course/Natours/img/Natours-Logo-green.png"
+            class="tooltipped" data-tooltip="Tours Project" data-position="top"></a>
+        <a class="carousel-item" href="https://omni-food-simple-project.herokuapp.com/" target="_blank"><img
+            src="https://www.ianposton.com/omnifood/resources/img/logo.png" class="tooltipped"
+            data-tooltip="Omni Food Site" data-position="top"></a>
+        <a class="carousel-item" href="#three!"><img src="budget.png" class="tooltipped" data-tooltip="Budget App"
+            data-position="top"></a>
+        <a class="carousel-item" href="https://weather-api-proj.herokuapp.com/" target="_blank"><img src="weather.png" class="tooltipped" data-tooltip="Weather API"
+            data-position="top"></a>
+      </div>
+    </li>
+    <li class="icon-group">
+      <!-- <i class="material-icons icons">delete</i> -->
+      <a href="https://github.com/single-byte" target="_blank" class='links'>
+        <ion-icon name="logo-github" class="icons git tooltipped" data-tooltip="Github" data-position="top"></ion-icon>
+      </a>
+
+      <a href="https://stackoverflow.com/users/13256774/single-byte" target="_blank" class='links'>
+        <ion-icon name="logo-stackoverflow" class="icons stack tooltipped" data-tooltip="Stack Overflow"
+          data-position="top"></ion-icon>
+      </a>
+
+      <a href="https://www.facebook.com/johar.khan.16547" class="links" target="_blank">
+        <ion-icon name="logo-facebook" class="icons fb tooltipped" data-tooltip="Facebook" data-position="top">
+        </ion-icon>
+      </a>
+
+      <a href="#" class="links" target="_blank">
+        <ion-icon name="at-circle" class="icons email tooltipped" data-tooltip="joharkhan1999@gmail.com"
+          data-position="top"></ion-icon>
+      </a>
+      <a href="#" class="links" target="_blank">
+        <ion-icon name="logo-whatsapp" class="icons wp tooltipped" data-tooltip="+92 311 8885245" data-position="top">
+        </ion-icon>
+      </a>
+      <a href="https://codepen.io/Single-Byte" class="links" target="_blank">
+        <ion-icon name="logo-codepen" class="pen icons tooltipped" data-tooltip="CodePen" data-position="top">
+        </ion-icon>
+      </a>
+      <p class="bottom-text">
+        <ion-icon name="code-slash" class="aim"></ion-icon><em>with</em>
+        <ion-icon name="heart" class="aim"></ion-icon><em>by</em> <em>Johar Khan</em>
+      </p>
+    </li>
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons tooltipped" data-tooltip="Profile" data-position="bottom">menu</i></a>
+
+  <!-- PROFILE -->
+
+    <video src="Tornado small.mp4" autoplay loop></video>
+    <div class="top">
+      <div class="budget">
+        <div class="budget__title">
+        Available Budget in <span class="budget__title--month">%Month%</span>
+      </div>
+      <div class="budget__value">+2,345.64</div>
+      <div class="budget__income clearFix">
+        <div class="budget__income--text">Income</div>
+        <div class="right">
+          <div class="budget__income--value">+4,300.00</div>
+          <div class="budget__income--percentage">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="budget__expenses clearFix">
+        <div class="budget__expenses--text">Expenses</div>
+        <div class="right clearFix">
+          <div class="budget__expenses--value">-1,954.36</div>
+          <div class="budget__expenses--percentage">45%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <form class="col s12">
+      <div class="input-field col s6 tooltipped"
+      data-tooltip="select type of budget" data-position="top">
+        <select class="add__type">
+          <option value="inc" selected>+ for Income</option>
+          <option value="exp">- for Expense</option>
+        </select>
+        <!-- <label>Incomes</label> -->
+      </div>
+      <div class="input-field col s6">
+        <input type="text" class="validate add__description" id="descp" placeholder="Add description">
+      </div>
+      <div class="input-field col s6">
+        <input type="text" class="validate add__value" id="value" placeholder="Enter amount">
+        <!-- <label for="value">Value</label> -->
+      </div>
+
+      <div class="input-field col tooltipped"
+      data-tooltip="click to add" data-position="right">
+      <a class="btn-floating btn-small waves-effect waves-light tale add__btn"><i class="material-icons">check_circle</i></a>
+      </div>
+    </form>
+  </div>
+
+  <div class="container">
+    <div class="income">
+      <h2 class="income__title">Income</h2>
+      <div class="income__list">
+      </div>
+    </div>
+
+    <div class="expenses">
+      <h2 class="expenses__title">Expenses</h2>
+      <div class="expenses__list">
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!--for materlize-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
